@@ -3,6 +3,7 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Image references" minToolsVersion="12.0"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -25,6 +26,7 @@
                             </label>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="texas-smokehouse-burger" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Jb-3aS">
                                 <rect key="frame" x="-28.666666666666657" y="169.66666666666663" width="450.33333333333326" height="360"/>
+                                <color key="tintColor" name="textColor2"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-Mq-3E7">
                                 <rect key="frame" x="50.666666666666657" y="545.33333333333337" width="292" height="32.666666666666629"/>
@@ -106,6 +108,14 @@
                                     <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
                                 </userDefinedRuntimeAttributes>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="K8c-No-gD7">
+                                <rect key="frame" x="176.66666666666666" y="166.66666666666669" width="40" height="33.666666666666657"/>
+                                <color key="tintColor" name="mainColor"/>
+                                <imageReference key="image" image="house" catalog="system" symbolScale="large" variableValue="1"/>
+                                <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font">
+                                    <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                </preferredSymbolConfiguration>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -121,6 +131,7 @@
                             <constraint firstItem="UGC-Jb-3aS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-44.666666666666657" id="GV3-VQ-dak"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iph-b0-0ep" secondAttribute="trailing" constant="29" id="Jdx-b7-n1W"/>
                             <constraint firstItem="vwd-eZ-bvu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qw1-JS-dPJ"/>
+                            <constraint firstItem="K8c-No-gD7" firstAttribute="centerX" secondItem="Tgl-Y0-k0j" secondAttribute="centerX" id="T98-q7-TAx"/>
                             <constraint firstItem="iph-b0-0ep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="b6l-Qf-fxp"/>
                             <constraint firstItem="f4P-mA-UUO" firstAttribute="centerX" secondItem="vwd-eZ-bvu" secondAttribute="centerX" id="bNb-Jh-y1V"/>
                             <constraint firstItem="f4P-mA-UUO" firstAttribute="top" secondItem="vwd-eZ-bvu" secondAttribute="bottom" constant="20" id="bdY-y2-LCi"/>
@@ -131,6 +142,7 @@
                             <constraint firstItem="jVi-NT-Set" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qKR-0m-iFw"/>
                             <constraint firstItem="QlT-Mq-3E7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w2g-36-jiB"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jVi-NT-Set" secondAttribute="bottom" constant="32" id="ydo-8m-Ewb"/>
+                            <constraint firstItem="K8c-No-gD7" firstAttribute="top" secondItem="Tgl-Y0-k0j" secondAttribute="bottom" constant="17.670000000000002" id="z6A-Yp-WNn"/>
                             <constraint firstItem="Tgl-Y0-k0j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zBW-bH-uAm"/>
                             <constraint firstItem="iph-b0-0ep" firstAttribute="top" secondItem="f4P-mA-UUO" secondAttribute="bottom" constant="24" id="zNC-Zw-bKt"/>
                         </constraints>
@@ -161,6 +173,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="house" catalog="system" width="128" height="104"/>
         <image name="texas-smokehouse-burger" width="450" height="360"/>
         <namedColor name="mainColor">
             <color red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
