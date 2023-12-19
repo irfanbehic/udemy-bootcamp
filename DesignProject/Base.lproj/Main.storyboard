@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="OKY-Zf-aa7">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="DesignProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Texas Smoke House" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tgl-Y0-k0j">
+                                <rect key="frame" x="61.333333333333343" y="119.00000000000001" width="270.33333333333326" height="34.666666666666671"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <color key="textColor" name="mainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="texas-smokehouse-burger" translatesAutoresizingMaskIntoConstraints="NO" id="UGC-Jb-3aS">
+                                <rect key="frame" x="-28.666666666666657" y="169.66666666666663" width="450.33333333333326" height="360"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="QlT-Mq-3E7">
+                                <rect key="frame" x="50.666666666666657" y="545.33333333333337" width="292" height="32.666666666666629"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cWM-zx-Ofk">
+                                        <rect key="frame" x="0.0" y="0.0" width="81.333333333333329" height="32.666666666666664"/>
+                                        <color key="backgroundColor" name="mainColor"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Cheese">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yx2-A6-275">
+                                        <rect key="frame" x="105.33333333333334" y="0.0" width="81.333333333333343" height="32.666666666666664"/>
+                                        <color key="backgroundColor" name="mainColor"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Potatoes">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iuq-Cf-8ur">
+                                        <rect key="frame" x="210.66666666666666" y="0.0" width="81.333333333333343" height="32.666666666666664"/>
+                                        <color key="backgroundColor" name="mainColor"/>
+                                        <color key="tintColor" name="textColor1"/>
+                                        <state key="normal" title="Button"/>
+                                        <buttonConfiguration key="configuration" style="plain" title="Sausage">
+                                            <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                        </buttonConfiguration>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="15"/>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="QlT-Mq-3E7" secondAttribute="height" multiplier="276:31" id="r9u-SH-yf4"/>
+                                </constraints>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="20 Minutes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vwd-eZ-bvu">
+                                <rect key="frame" x="139" y="598" width="115.33333333333331" height="26.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="textColor2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Delivery" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="f4P-mA-UUO">
+                                <rect key="frame" x="154.33333333333334" y="644.33333333333337" width="84.333333333333343" height="26.333333333333371"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <color key="textColor" name="mainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Place your Order and Get the Taste Instantly" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iph-b0-0ep">
+                                <rect key="frame" x="29" y="694.66666666666663" width="335" height="40.666666666666629"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" name="textColor2"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$5.98" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jVi-NT-Set">
+                                <rect key="frame" x="16" y="750" width="86.333333333333329" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <color key="textColor" name="mainColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HVp-Mn-09I">
+                                <rect key="frame" x="276.33333333333331" y="752.66666666666663" width="100.66666666666669" height="31"/>
+                                <color key="backgroundColor" name="mainColor"/>
+                                <color key="tintColor" name="textColor1"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Add To Cart">
+                                    <fontDescription key="titleFontDescription" type="system" pointSize="14"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="10"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="f4P-mA-UUO" firstAttribute="top" secondItem="vwd-eZ-bvu" secondAttribute="bottom" constant="20" id="3SF-9j-hQl"/>
+                            <constraint firstItem="vwd-eZ-bvu" firstAttribute="top" secondItem="QlT-Mq-3E7" secondAttribute="bottom" constant="20" id="3g6-NW-Xjj"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="HVp-Mn-09I" secondAttribute="trailing" constant="16" id="3us-Ad-yPO"/>
+                            <constraint firstItem="iph-b0-0ep" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="4xj-uv-rpR"/>
+                            <constraint firstItem="iph-b0-0ep" firstAttribute="top" secondItem="f4P-mA-UUO" secondAttribute="bottom" constant="24" id="CdO-S2-l1M"/>
+                            <constraint firstItem="iph-b0-0ep" firstAttribute="top" secondItem="f4P-mA-UUO" secondAttribute="bottom" constant="24" id="Dr8-OL-O9u"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="QlT-Mq-3E7" secondAttribute="bottom" constant="240" id="Fd9-kP-X5L"/>
+                            <constraint firstItem="UGC-Jb-3aS" firstAttribute="top" secondItem="Tgl-Y0-k0j" secondAttribute="bottom" constant="15.999999999999943" id="Fur-gI-CJy"/>
+                            <constraint firstItem="UGC-Jb-3aS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="-44.666666666666657" id="GV3-VQ-dak"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iph-b0-0ep" secondAttribute="trailing" constant="29" id="Jdx-b7-n1W"/>
+                            <constraint firstItem="vwd-eZ-bvu" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Qw1-JS-dPJ"/>
+                            <constraint firstItem="iph-b0-0ep" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="b6l-Qf-fxp"/>
+                            <constraint firstItem="f4P-mA-UUO" firstAttribute="centerX" secondItem="vwd-eZ-bvu" secondAttribute="centerX" id="bNb-Jh-y1V"/>
+                            <constraint firstItem="f4P-mA-UUO" firstAttribute="top" secondItem="vwd-eZ-bvu" secondAttribute="bottom" constant="20" id="bdY-y2-LCi"/>
+                            <constraint firstItem="UGC-Jb-3aS" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="bhz-Qu-aAV"/>
+                            <constraint firstItem="f4P-mA-UUO" firstAttribute="top" secondItem="vwd-eZ-bvu" secondAttribute="bottom" constant="20" id="gn1-BJ-kHr"/>
+                            <constraint firstItem="Tgl-Y0-k0j" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="lJE-qf-WA2"/>
+                            <constraint firstItem="HVp-Mn-09I" firstAttribute="centerY" secondItem="jVi-NT-Set" secondAttribute="centerY" id="ma9-tF-MzX"/>
+                            <constraint firstItem="jVi-NT-Set" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="qKR-0m-iFw"/>
+                            <constraint firstItem="QlT-Mq-3E7" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="w2g-36-jiB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="jVi-NT-Set" secondAttribute="bottom" constant="32" id="ydo-8m-Ewb"/>
+                            <constraint firstItem="Tgl-Y0-k0j" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="zBW-bH-uAm"/>
+                            <constraint firstItem="iph-b0-0ep" firstAttribute="top" secondItem="f4P-mA-UUO" secondAttribute="bottom" constant="24" id="zNC-Zw-bKt"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" id="0S4-Q4-LhD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1063.3587786259541" y="3.5211267605633805"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="tbN-Wt-Eqj">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="OKY-Zf-aa7" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="IaE-nA-7Id">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="QQ9-E3-wu9"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7rT-KZ-YS5" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.64122137404578" y="3.5211267605633805"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="texas-smokehouse-burger" width="450" height="360"/>
+        <namedColor name="mainColor">
+            <color red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+        </namedColor>
+        <namedColor name="textColor1">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="textColor2">
+            <color red="0.3880000114440918" green="0.3880000114440918" blue="0.3880000114440918" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
