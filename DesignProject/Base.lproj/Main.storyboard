@@ -176,7 +176,7 @@
         <image name="house" catalog="system" width="128" height="104"/>
         <image name="texas-smokehouse-burger" width="450" height="360"/>
         <namedColor name="mainColor">
-            <color red="0.95686274509803915" green="0.2627450980392157" blue="0.21176470588235294" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color red="0.9570000171661377" green="0.2630000114440918" blue="0.21199999749660492" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
         </namedColor>
         <namedColor name="textColor1">
             <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
