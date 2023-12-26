@@ -3,8 +3,8 @@
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
-        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -15,8 +15,62 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Your Journey Starts Here" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nPq-su-iK0">
+                                <rect key="frame" x="33" y="138" width="326.66666666666669" height="34"/>
+                                <fontDescription key="fontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="27"/>
+                                <color key="textColor" name="textColor4"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Medidate, feel your emotions and take a place where you can rest." textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="auW-xR-XOg">
+                                <rect key="frame" x="10" y="182" width="373" height="86"/>
+                                <fontDescription key="fontDescription" name="GeezaPro" family="Geeza Pro" pointSize="20"/>
+                                <color key="textColor" name="textColor4"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MGX-70-uH6">
+                                <rect key="frame" x="50.000000000000007" y="699.33333333333337" width="78.666666666666686" height="38.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Login">
+                                    <fontDescription key="titleFontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.CornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3438035_61377" id="5wA-fG-0iU">
+                                <rect key="frame" x="0.0" y="258" width="393" height="437"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pfV-Wc-qJ4">
+                                <rect key="frame" x="170.33333333333337" y="699.33333333333337" width="172.66666666666663" height="38.666666666666629"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="gray" title="Create Account">
+                                    <fontDescription key="titleFontDescription" name="GeezaPro-Bold" family="Geeza Pro" pointSize="20"/>
+                                </buttonConfiguration>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.CornerRadius" value="15"/>
+                                </userDefinedRuntimeAttributes>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <color key="backgroundColor" red="0.99215686274509807" green="0.94901960784313721" blue="0.94117647058823528" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="nPq-su-iK0" secondAttribute="bottom" constant="646" id="2eO-g8-FnL"/>
+                            <constraint firstItem="auW-xR-XOg" firstAttribute="top" secondItem="nPq-su-iK0" secondAttribute="bottom" constant="10" id="Gcd-S7-Pm8"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="nPq-su-iK0" secondAttribute="trailing" constant="33.329999999999998" id="HeC-P6-Zkc"/>
+                            <constraint firstItem="nPq-su-iK0" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="33" id="Idp-9m-kGp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="auW-xR-XOg" secondAttribute="bottom" constant="550" id="IgF-AX-iVd"/>
+                            <constraint firstItem="auW-xR-XOg" firstAttribute="top" secondItem="nPq-su-iK0" secondAttribute="bottom" constant="10" id="LTO-zL-xcm"/>
+                            <constraint firstItem="auW-xR-XOg" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="10" id="QTS-X1-yga"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pfV-Wc-qJ4" secondAttribute="trailing" constant="50" id="QWy-eK-EfE"/>
+                            <constraint firstItem="auW-xR-XOg" firstAttribute="top" secondItem="nPq-su-iK0" secondAttribute="bottom" constant="10" id="abu-FD-56s"/>
+                            <constraint firstAttribute="trailing" secondItem="auW-xR-XOg" secondAttribute="trailing" constant="10" id="dC8-oo-uBZ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="MGX-70-uH6" secondAttribute="bottom" constant="80" id="hz9-LW-aNj"/>
+                            <constraint firstItem="MGX-70-uH6" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="tZo-oy-9ob"/>
+                            <constraint firstItem="nPq-su-iK0" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="35" id="uJQ-u2-rlr"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="pfV-Wc-qJ4" secondAttribute="bottom" constant="80" id="yoT-y0-NBg"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="DIT-P6-OLL"/>
                 </viewController>
@@ -32,6 +86,9 @@
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="xF8-KX-pqV">
                         <rect key="frame" x="0.0" y="59" width="393" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
+                        <textAttributes key="largeTitleTextAttributes">
+                            <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="0.0"/>
+                        </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
@@ -44,8 +101,9 @@
         </scene>
     </scenes>
     <resources>
-        <systemColor name="systemBackgroundColor">
-            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
+        <image name="3438035_61377" width="5000" height="5000"/>
+        <namedColor name="textColor4">
+            <color red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
     </resources>
 </document>

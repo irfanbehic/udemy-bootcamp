@@ -24,10 +24,6 @@ class ViewController: UIViewController {
         navigationController?.navigationBar.scrollEdgeAppearance = appearence
 
         
-        
-        
-        
-        
     }
 
 

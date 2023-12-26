@@ -13,19 +13,19 @@
 		9D8D7BE22B3324B300D57C8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8D7BE02B3324B300D57C8A /* Main.storyboard */; };
 		9D8D7BE42B3324B500D57C8A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9D8D7BE32B3324B500D57C8A /* Assets.xcassets */; };
 		9D8D7BE72B3324B500D57C8A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9D8D7BE52B3324B500D57C8A /* LaunchScreen.storyboard */; };
-		9D8D7BF02B33284800D57C8A /* Avenir 85 Heavy.otf in Resources */ = {isa = PBXBuildFile; fileRef = 9D8D7BEF2B33284800D57C8A /* Avenir 85 Heavy.otf */; };
+		9DF81C592B39B45A00E9CADC /* Anton-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9DF81C582B39B45900E9CADC /* Anton-Regular.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		9D8D7BD72B3324B300D57C8A /* DesignExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DesignExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		9D8D7BDA2B3324B300D57C8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9D8D7BDC2B3324B300D57C8A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		9D8D7BDE2B3324B300D57C8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		9D8D7BDE2B3324B300D57C8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.swift; };
 		9D8D7BE12B3324B300D57C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		9D8D7BE32B3324B500D57C8A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9D8D7BE62B3324B500D57C8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9D8D7BE82B3324B500D57C8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9D8D7BEF2B33284800D57C8A /* Avenir 85 Heavy.otf */ = {isa = PBXFileReference; lastKnownFileType = file; name = "Avenir 85 Heavy.otf"; path = "../../../../../../../../../../Downloads/Avenir 85 Heavy.otf"; sourceTree = "<group>"; };
+		9DF81C582B39B45900E9CADC /* Anton-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Anton-Regular.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,7 +73,7 @@
 		9D8D7BEE2B33283900D57C8A /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
-				9D8D7BEF2B33284800D57C8A /* Avenir 85 Heavy.otf */,
+				9DF81C582B39B45900E9CADC /* Anton-Regular.ttf */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -136,8 +136,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9DF81C592B39B45A00E9CADC /* Anton-Regular.ttf in Resources */,
 				9D8D7BE72B3324B500D57C8A /* LaunchScreen.storyboard in Resources */,
-				9D8D7BF02B33284800D57C8A /* Avenir 85 Heavy.otf in Resources */,
 				9D8D7BE42B3324B500D57C8A /* Assets.xcassets in Resources */,
 				9D8D7BE22B3324B300D57C8A /* Main.storyboard in Resources */,
 			);
