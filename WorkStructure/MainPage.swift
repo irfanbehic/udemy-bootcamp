@@ -66,4 +66,16 @@ class MainPage: UIViewController {
         }
     }
     
+    
+    @IBAction func buttonAdd(_ sender: Any) {
+        print("Add Seçildi")
+    }
+    
+    
+    @IBAction func buttonSave(_ sender: Any) {
+        print("Save Seçildi")
+    }
+    
+    
+    
 }

@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Main Page" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7P4-xu-Kt8">
-                                <rect key="frame" x="86" y="203" width="221" height="60"/>
+                                <rect key="frame" x="86" y="237" width="221" height="60"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="50"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -50,8 +50,22 @@
                             <constraint firstItem="YXs-jd-Hz4" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="yfI-vC-Ri1"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Main Page" id="REo-sz-XzD">
+                    <navigationItem key="navigationItem" title="Main Page" prompt="Description" id="REo-sz-XzD">
                         <barButtonItem key="backBarButtonItem" title="Back" id="a0B-lV-b6d"/>
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="5KU-Ch-w5D">
+                                <color key="tintColor" systemColor="systemRedColor"/>
+                                <connections>
+                                    <action selector="buttonAdd:" destination="BYZ-38-t0r" id="6Cy-t8-W72"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem title="Save" id="Ttk-ku-9vY">
+                                <color key="tintColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <connections>
+                                    <action selector="buttonSave:" destination="BYZ-38-t0r" id="AJL-LW-idH"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
                     </navigationItem>
                     <connections>
                         <outlet property="labelMainPage" destination="7P4-xu-Kt8" id="cdL-lv-ilw"/>
@@ -173,6 +187,9 @@
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
