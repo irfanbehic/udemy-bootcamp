@@ -19,4 +19,5 @@ class ResultScreen: UIViewController {
 //        sayfayı kapatan kod
         self.dismiss(animated: true)
     }
+    
 }

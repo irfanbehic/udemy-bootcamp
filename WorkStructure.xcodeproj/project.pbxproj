@@ -15,6 +15,7 @@
 		9DF81C732B3B09D100E9CADC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9DF81C712B3B09D100E9CADC /* LaunchScreen.storyboard */; };
 		9DF81C7B2B3B0C2A00E9CADC /* GameScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF81C7A2B3B0C2A00E9CADC /* GameScreen.swift */; };
 		9DF81C7D2B3B0C3B00E9CADC /* ResultScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF81C7C2B3B0C3B00E9CADC /* ResultScreen.swift */; };
+		9DF81C7F2B3C5DF700E9CADC /* Contacts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DF81C7E2B3C5DF700E9CADC /* Contacts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		9DF81C742B3B09D100E9CADC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9DF81C7A2B3B0C2A00E9CADC /* GameScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameScreen.swift; sourceTree = "<group>"; };
 		9DF81C7C2B3B0C3B00E9CADC /* ResultScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultScreen.swift; sourceTree = "<group>"; };
+		9DF81C7E2B3C5DF700E9CADC /* Contacts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contacts.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				9DF81C6A2B3B09D000E9CADC /* MainPage.swift */,
 				9DF81C7A2B3B0C2A00E9CADC /* GameScreen.swift */,
 				9DF81C7C2B3B0C3B00E9CADC /* ResultScreen.swift */,
+				9DF81C7E2B3C5DF700E9CADC /* Contacts.swift */,
 				9DF81C6C2B3B09D000E9CADC /* Main.storyboard */,
 				9DF81C6F2B3B09D100E9CADC /* Assets.xcassets */,
 				9DF81C712B3B09D100E9CADC /* LaunchScreen.storyboard */,
@@ -146,6 +149,7 @@
 			files = (
 				9DF81C6B2B3B09D000E9CADC /* MainPage.swift in Sources */,
 				9DF81C7D2B3B0C3B00E9CADC /* ResultScreen.swift in Sources */,
+				9DF81C7F2B3C5DF700E9CADC /* Contacts.swift in Sources */,
 				9DF81C7B2B3B0C2A00E9CADC /* GameScreen.swift in Sources */,
 				9DF81C672B3B09D000E9CADC /* AppDelegate.swift in Sources */,
 				9DF81C692B3B09D000E9CADC /* SceneDelegate.swift in Sources */,
