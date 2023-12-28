@@ -15,6 +15,15 @@ class MainPage: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-
+    
+    @IBAction func labelGoToA(_ sender: Any) {
+        performSegue(withIdentifier: "labelGoToA", sender: MainPage())
+    }
+    
+    
+    @IBAction func labelGoToB(_ sender: Any) {
+        performSegue(withIdentifier: "labelGoToB", sender: MainPage())
+    }
+    
 }
 

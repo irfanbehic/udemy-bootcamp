@@ -22,17 +22,39 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="2Z3-u8-OLf">
+                                <rect key="frame" x="70" y="633" width="84" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go To A"/>
+                                <connections>
+                                    <action selector="labelGoToA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Vm-9d-ejd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTN-f1-7be">
+                                <rect key="frame" x="239.33333333333334" y="633" width="83.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go To B"/>
+                                <connections>
+                                    <action selector="labelGoToB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4p-7K-jMe"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="NTN-f1-7be" secondAttribute="bottom" constant="150" id="0ce-OV-uUQ"/>
                             <constraint firstItem="wre-sS-Hxw" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Aww-oa-Q4o"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="2Z3-u8-OLf" secondAttribute="bottom" constant="150" id="OMk-Hd-90I"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="NTN-f1-7be" secondAttribute="trailing" constant="70" id="RV8-tV-V9s"/>
+                            <constraint firstItem="2Z3-u8-OLf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="RuP-Ga-E93"/>
                             <constraint firstItem="wre-sS-Hxw" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="dfo-bW-Tiw"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CaseStudy 4 " id="OAy-nf-db1"/>
                     <connections>
                         <outlet property="labelMainPage" destination="wre-sS-Hxw" id="aLq-We-BUv"/>
+                        <segue destination="XKt-md-pez" kind="show" identifier="labelGoToA" id="xUC-Du-4A7"/>
+                        <segue destination="QRn-e6-nzf" kind="show" identifier="labelGoToB" id="u9V-se-3At"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -49,6 +71,7 @@
                         <viewLayoutGuide key="safeArea" id="OpP-AS-nhA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="unk-n2-q4v"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWp-sd-euI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -79,6 +102,7 @@
                         <viewLayoutGuide key="safeArea" id="jlq-7n-bhg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <navigationItem key="navigationItem" id="hZV-Ws-X9Z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WH-Ve-oev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
