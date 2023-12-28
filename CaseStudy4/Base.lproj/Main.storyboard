@@ -27,15 +27,15 @@
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="filled" title="Go To A"/>
                                 <connections>
-                                    <action selector="labelGoToA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0Vm-9d-ejd"/>
+                                    <action selector="buttonGoToA:" destination="BYZ-38-t0r" eventType="touchUpInside" id="kWO-pU-LoS"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NTN-f1-7be">
-                                <rect key="frame" x="239.33333333333334" y="633" width="83.666666666666657" height="35"/>
+                                <rect key="frame" x="239" y="633" width="84" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="filled" title="Go To B"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go To X"/>
                                 <connections>
-                                    <action selector="labelGoToB:" destination="BYZ-38-t0r" eventType="touchUpInside" id="N4p-7K-jMe"/>
+                                    <action selector="buttonGoToX:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YzB-ni-BYR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -53,8 +53,8 @@
                     <navigationItem key="navigationItem" title="CaseStudy 4 " id="OAy-nf-db1"/>
                     <connections>
                         <outlet property="labelMainPage" destination="wre-sS-Hxw" id="aLq-We-BUv"/>
-                        <segue destination="XKt-md-pez" kind="show" identifier="labelGoToA" id="xUC-Du-4A7"/>
-                        <segue destination="QRn-e6-nzf" kind="show" identifier="labelGoToB" id="u9V-se-3At"/>
+                        <segue destination="XKt-md-pez" kind="show" identifier="TransitionToA" id="ffg-8D-680"/>
+                        <segue destination="QRn-e6-nzf" kind="show" identifier="TransitionToX" id="Vzx-P0-5Qt"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -68,10 +68,36 @@
                     <view key="view" contentMode="scaleToFill" id="VpL-kO-zqV">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page X" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="p8d-8f-hr6">
+                                <rect key="frame" x="143.66666666666666" y="405" width="106" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ajd-N7-TDL">
+                                <rect key="frame" x="154.66666666666666" y="633" width="83.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go To Y"/>
+                                <connections>
+                                    <action selector="buttonGoToX:" destination="QRn-e6-nzf" eventType="touchUpInside" id="snm-Pb-hIl"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="OpP-AS-nhA"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="p8d-8f-hr6" firstAttribute="centerX" secondItem="VpL-kO-zqV" secondAttribute="centerX" id="OEM-dG-QLa"/>
+                            <constraint firstItem="p8d-8f-hr6" firstAttribute="centerY" secondItem="VpL-kO-zqV" secondAttribute="centerY" id="S0y-zP-pM7"/>
+                            <constraint firstItem="OpP-AS-nhA" firstAttribute="bottom" secondItem="Ajd-N7-TDL" secondAttribute="bottom" constant="150" id="gc8-kS-Hhb"/>
+                            <constraint firstItem="Ajd-N7-TDL" firstAttribute="centerX" secondItem="VpL-kO-zqV" secondAttribute="centerX" id="hD6-by-mtK"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="unk-n2-q4v"/>
+                    <connections>
+                        <outlet property="labelPageX" destination="p8d-8f-hr6" id="IpF-RE-R3O"/>
+                        <segue destination="O4j-1y-Ne0" kind="show" identifier="TransitionXToY" id="Tl7-sR-K3e"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="IWp-sd-euI" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -84,9 +110,35 @@
                     <view key="view" contentMode="scaleToFill" id="h3L-d8-9zz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page Y" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JS5-4C-RaI">
+                                <rect key="frame" x="144" y="405" width="105" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FRU-Dw-5F6">
+                                <rect key="frame" x="120" y="633" width="153" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go To Main Page"/>
+                                <connections>
+                                    <action selector="buttonGoToMainPage:" destination="O4j-1y-Ne0" eventType="touchUpInside" id="JMR-TD-uxA"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="5Tl-hW-GD7"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JS5-4C-RaI" firstAttribute="centerY" secondItem="h3L-d8-9zz" secondAttribute="centerY" id="3qx-rx-hfh"/>
+                            <constraint firstItem="5Tl-hW-GD7" firstAttribute="bottom" secondItem="FRU-Dw-5F6" secondAttribute="bottom" constant="150" id="5Q1-Mq-Ayk"/>
+                            <constraint firstItem="JS5-4C-RaI" firstAttribute="centerX" secondItem="h3L-d8-9zz" secondAttribute="centerX" id="J7I-am-hb1"/>
+                            <constraint firstItem="FRU-Dw-5F6" firstAttribute="centerX" secondItem="h3L-d8-9zz" secondAttribute="centerX" id="lnW-vI-RyM"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="DG7-lz-C8t"/>
+                    <connections>
+                        <outlet property="labelPageY" destination="JS5-4C-RaI" id="ue0-2J-4bs"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9YS-BK-mGP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -99,10 +151,37 @@
                     <view key="view" contentMode="scaleToFill" id="Vb7-Ba-HrD">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gke-N5-O1q">
+                                <rect key="frame" x="143.66666666666666" y="405" width="106" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46Y-Qp-uaZ">
+                                <rect key="frame" x="154.66666666666666" y="633" width="83.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go To B"/>
+                                <connections>
+                                    <action selector="buttonGoToB:" destination="XKt-md-pez" eventType="touchUpInside" id="ZML-gn-Y9F"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="jlq-7n-bhg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Gke-N5-O1q" firstAttribute="centerY" secondItem="Vb7-Ba-HrD" secondAttribute="centerY" id="HCR-eb-8Rh"/>
+                            <constraint firstItem="46Y-Qp-uaZ" firstAttribute="leading" secondItem="jlq-7n-bhg" secondAttribute="leading" constant="154.66999999999999" id="MHs-kE-cGT"/>
+                            <constraint firstItem="Gke-N5-O1q" firstAttribute="centerX" secondItem="Vb7-Ba-HrD" secondAttribute="centerX" id="XYo-le-dCL"/>
+                            <constraint firstItem="46Y-Qp-uaZ" firstAttribute="centerX" secondItem="Vb7-Ba-HrD" secondAttribute="centerX" id="aYh-ke-oQB"/>
+                            <constraint firstItem="jlq-7n-bhg" firstAttribute="bottom" secondItem="46Y-Qp-uaZ" secondAttribute="bottom" constant="150" id="wkh-mh-13j"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hZV-Ws-X9Z"/>
+                    <connections>
+                        <outlet property="labelPageA" destination="Gke-N5-O1q" id="SK0-ij-gf3"/>
+                        <segue destination="fXP-LH-r0s" kind="show" identifier="TransitionAToB" id="sS0-ze-6o1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0WH-Ve-oev" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -115,9 +194,36 @@
                     <view key="view" contentMode="scaleToFill" id="234-Xa-aRg">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Page B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jBk-0Z-1Ea">
+                                <rect key="frame" x="144.66666666666666" y="405" width="104" height="42"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RpM-E5-wVv">
+                                <rect key="frame" x="154.66666666666666" y="633" width="83.666666666666657" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Go To Y"/>
+                                <connections>
+                                    <action selector="buttonGoToY:" destination="fXP-LH-r0s" eventType="touchUpInside" id="LrT-XO-qb0"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="N2W-E8-Lgq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jBk-0Z-1Ea" firstAttribute="centerX" secondItem="234-Xa-aRg" secondAttribute="centerX" id="Cqb-ya-F37"/>
+                            <constraint firstItem="jBk-0Z-1Ea" firstAttribute="centerY" secondItem="234-Xa-aRg" secondAttribute="centerY" id="P4e-NT-YJq"/>
+                            <constraint firstItem="N2W-E8-Lgq" firstAttribute="bottom" secondItem="RpM-E5-wVv" secondAttribute="bottom" constant="150" id="jkg-HT-v7k"/>
+                            <constraint firstItem="RpM-E5-wVv" firstAttribute="centerX" secondItem="234-Xa-aRg" secondAttribute="centerX" id="ke9-nr-JID"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="PEg-SE-3kO"/>
+                    <connections>
+                        <outlet property="labelPageB" destination="jBk-0Z-1Ea" id="Kjb-ag-DWS"/>
+                        <segue destination="O4j-1y-Ne0" kind="show" identifier="TransitionBToY" id="T3d-Vg-74I"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mdR-o4-A9f" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -142,6 +248,9 @@
             <point key="canvasLocation" x="35.877862595419849" y="3.5211267605633805"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="T3d-Vg-74I"/>
+    </inferredMetricsTieBreakers>
     <resources>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

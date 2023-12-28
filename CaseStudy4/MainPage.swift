@@ -16,13 +16,15 @@ class MainPage: UIViewController {
     }
 
     
-    @IBAction func labelGoToA(_ sender: Any) {
-        performSegue(withIdentifier: "labelGoToA", sender: MainPage())
+    @IBAction func buttonGoToA(_ sender: Any) {
+        performSegue(withIdentifier: "TransitionToA", sender: nil)
+        
     }
     
     
-    @IBAction func labelGoToB(_ sender: Any) {
-        performSegue(withIdentifier: "labelGoToB", sender: MainPage())
+    @IBAction func buttonGoToX(_ sender: Any) {
+        
+        performSegue(withIdentifier: "TransitionToX", sender: nil)
     }
     
 }
