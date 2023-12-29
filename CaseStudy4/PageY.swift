@@ -17,7 +17,7 @@ class PageY: UIViewController {
     }
 
     @IBAction func buttonGoToMainPage(_ sender: Any) {
-        
+//        return to main page
         navigationController?.popToRootViewController(animated: true)
         
     }
