@@ -17,6 +17,8 @@ class ViewController: UIViewController {
     
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -51,11 +53,16 @@ class ViewController: UIViewController {
     }
 //    Show butonuna bastığımızda switchin son durumunu söylemesini istiyoruz.
     @IBAction func buttonShow(_ sender: Any) {
-        
         print("Switch Status : \(mSwitch.isOn)")
+        let choosenIndex = segmentedControl.selectedSegmentIndex
+        _ = segmentedControl.titleForSegment(at: choosenIndex)
+        print("Seçim : \(choosenIndex)")
     }
     
-    
-    
+    @IBAction func segmentedControlChange(_ sender: UISegmentedControl) {
+        let choosenIndex = sender.selectedSegmentIndex
+        _ = sender.titleForSegment(at: choosenIndex)
+        print("Seçim : \(choosenIndex)")
+    }
 }
 

@@ -73,6 +73,17 @@
                                     <action selector="buttonShow:" destination="BYZ-38-t0r" eventType="touchUpInside" id="jNf-7N-ou7"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="ryY-gM-gvo">
+                                <rect key="frame" x="95" y="353" width="203" height="32"/>
+                                <segments>
+                                    <segment title="Foods"/>
+                                    <segment title="Deserts"/>
+                                    <segment title="Drinks"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="088-KM-9Yx"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
@@ -81,6 +92,8 @@
                             <constraint firstItem="UFI-sz-Mge" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="50a-lW-lDe"/>
                             <constraint firstItem="20j-v4-9iq" firstAttribute="top" secondItem="scM-5r-NET" secondAttribute="bottom" constant="100" id="Ev3-Zr-CD4"/>
                             <constraint firstItem="R2m-Us-aWE" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Fqp-lZ-nWc"/>
+                            <constraint firstItem="ryY-gM-gvo" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="GyA-ej-GHL"/>
+                            <constraint firstItem="ryY-gM-gvo" firstAttribute="top" secondItem="R2m-Us-aWE" secondAttribute="bottom" constant="16" id="Ixk-7x-uXC"/>
                             <constraint firstItem="lf6-c3-bu9" firstAttribute="top" secondItem="scM-5r-NET" secondAttribute="bottom" constant="100" id="Ovr-nQ-ins"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="scM-5r-NET" secondAttribute="trailing" constant="50" id="TZM-zs-hGY"/>
                             <constraint firstItem="Iql-dn-qcO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VdU-BZ-JkT"/>
@@ -101,6 +114,7 @@
                         <outlet property="imageView" destination="bRL-k9-Lvg" id="RRa-gt-bOO"/>
                         <outlet property="labelResult" destination="kfF-iK-hMQ" id="IP9-ps-rOV"/>
                         <outlet property="mSwitch" destination="R2m-Us-aWE" id="v3E-mA-B9y"/>
+                        <outlet property="segmentedControl" destination="ryY-gM-gvo" id="wXm-Je-qia"/>
                         <outlet property="textFieldInput" destination="scM-5r-NET" id="bvC-tn-enr"/>
                     </connections>
                 </viewController>
