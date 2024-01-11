@@ -9,9 +9,16 @@ import UIKit
 
 class ViewController: UIViewController {
 
+  
+    @IBOutlet var calcButtons: [UIButton]!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        for button in calcButtons {
+            
+            button.titleLabel?.font = UIFont(name: "System", size: 24)
+        }
     }
 
 
