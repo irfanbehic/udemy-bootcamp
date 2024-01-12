@@ -9,21 +9,23 @@ import UIKit
 
 class ContactsDetail: UIViewController {
 
+    @IBOutlet weak var tfPersonName: UITextField!
+    @IBOutlet weak var tfPersonTel: UITextField!
+    var contact: Contacts?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        if let k = contact {
+            tfPersonName.text = k.person_name
+            tfPersonTel.text = k.person_tel
+        }
     }
-    
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    @IBAction func buttonUpdate(_ sender: Any) {
+        if let pa = tfPersonName.text, let pt = tfPersonTel.text, let p = contact {
+            update(person_name: pa, person_tel: pt, person_id: p.person_id!)
+        }
     }
-    */
-
+    func update(person_name:String,person_tel:String,person_id:Int) {
+        print("Person Registry : \(person_id) ---- \(person_name) ----  \(person_tel)")
+    }
 }
