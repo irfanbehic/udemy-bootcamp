@@ -16,8 +16,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BE-hE-Eoj">
-                                <rect key="frame" x="16" y="199" width="343" height="96"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="right" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2BE-hE-Eoj">
+                                <rect key="frame" x="16" y="199.33333333333334" width="343" height="95.666666666666657"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="80"/>
                                 <color key="textColor" systemColor="secondarySystemBackgroundColor"/>
                                 <nil key="highlightedColor"/>
@@ -275,6 +275,7 @@
                         <color key="backgroundColor" systemColor="labelColor"/>
                         <constraints>
                             <constraint firstItem="2BE-hE-Eoj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149.33000000000001" id="FWk-OE-L2H"/>
+                            <constraint firstItem="2BE-hE-Eoj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="K3a-5F-OfC"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="2BE-hE-Eoj" secondAttribute="trailing" constant="16" id="Ue8-yu-xJM"/>
                             <constraint firstItem="2BE-hE-Eoj" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="149.33000000000001" id="WpB-ic-O41"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="27x-av-DaM" secondAttribute="bottom" constant="20" id="YqL-KD-ftU"/>
