@@ -40,19 +40,19 @@
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="FZ0-WL-Aiw">
                                                             <rect key="frame" x="160" y="25.666666666666657" width="114.33333333333331" height="107"/>
                                                             <subviews>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="iPhone 13 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRP-j5-70H">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="iPhone 13 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LRP-j5-70H">
                                                                     <rect key="frame" x="0.0" y="0.0" width="78.666666666666671" height="20.333333333333332"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <color key="textColor" systemColor="systemIndigoColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="1.100 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMb-s7-vSn">
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.100 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JMb-s7-vSn">
                                                                     <rect key="frame" x="0.0" y="36.333333333333336" width="54" height="20.333333333333336"/>
                                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                                     <nil key="textColor"/>
                                                                     <nil key="highlightedColor"/>
                                                                 </label>
-                                                                <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcG-Pa-sIo">
+                                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rcG-Pa-sIo">
                                                                     <rect key="frame" x="0.0" y="72.666666666666657" width="114.33333333333333" height="34.333333333333343"/>
                                                                     <state key="normal" title="Button"/>
                                                                     <buttonConfiguration key="configuration" style="filled" title="Add To Cart"/>
@@ -101,6 +101,7 @@
                     <navigationItem key="navigationItem" title="Products" id="jcQ-pS-0xQ"/>
                     <connections>
                         <outlet property="productsTableView" destination="c0c-LC-Emj" id="6ld-ye-aJ4"/>
+                        <segue destination="Alh-mX-2hM" kind="show" identifier="toDetail" id="cDu-8N-54h"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -114,9 +115,43 @@
                     <view key="view" contentMode="scaleToFill" id="AmW-mU-Sdz">
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="XHb-9w-ozk">
+                                <rect key="frame" x="68.666666666666686" y="187" width="256" height="256"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1.100 $" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gpz-d1-6tI">
+                                <rect key="frame" x="137" y="475" width="119" height="42"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IHF-lI-1fl">
+                                <rect key="frame" x="32" y="751" width="329" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="filled" title="Add to Cart"/>
+                                <connections>
+                                    <action selector="buttonAddToCart:" destination="Alh-mX-2hM" eventType="touchUpInside" id="WGw-md-kAF"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="bME-kX-B4Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="gpz-d1-6tI" firstAttribute="top" secondItem="XHb-9w-ozk" secondAttribute="bottom" constant="32" id="6uw-ts-8bD"/>
+                            <constraint firstItem="IHF-lI-1fl" firstAttribute="leading" secondItem="bME-kX-B4Q" secondAttribute="leading" constant="32" id="Dqg-vT-XW5"/>
+                            <constraint firstItem="XHb-9w-ozk" firstAttribute="top" secondItem="bME-kX-B4Q" secondAttribute="top" constant="32" id="Oci-h3-AVr"/>
+                            <constraint firstItem="XHb-9w-ozk" firstAttribute="centerX" secondItem="AmW-mU-Sdz" secondAttribute="centerX" id="Rah-Ot-Lqn"/>
+                            <constraint firstItem="bME-kX-B4Q" firstAttribute="trailing" secondItem="IHF-lI-1fl" secondAttribute="trailing" constant="32" id="X60-io-bDS"/>
+                            <constraint firstItem="gpz-d1-6tI" firstAttribute="centerX" secondItem="AmW-mU-Sdz" secondAttribute="centerX" id="YyG-pG-dTa"/>
+                            <constraint firstItem="bME-kX-B4Q" firstAttribute="bottom" secondItem="IHF-lI-1fl" secondAttribute="bottom" constant="32" id="iJJ-Zt-hsq"/>
+                            <constraint firstItem="IHF-lI-1fl" firstAttribute="centerX" secondItem="AmW-mU-Sdz" secondAttribute="centerX" id="ucQ-Zg-QHc"/>
+                        </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="6dB-cQ-vjn"/>
+                    <connections>
+                        <outlet property="imageViewProduct" destination="XHb-9w-ozk" id="qHx-hk-ng5"/>
+                        <outlet property="labelProductPrice" destination="gpz-d1-6tI" id="9c3-Po-0BU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JIW-zf-u7j" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

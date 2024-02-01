@@ -54,6 +54,7 @@ extension MainPage: UITableViewDelegate,UITableViewDataSource {
         
         cell.backgroundColor = UIColor(white: 0.95, alpha: 1)
         cell.cellBackground?.layer.cornerRadius = 10
+        cell.selectionStyle = .none
         
         return cell
     }
@@ -73,6 +74,20 @@ extension MainPage: UITableViewDelegate,UITableViewDataSource {
         
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let product = productsList[indexPath.row]
+//        print("\(product.name!) choosed")
+        performSegue(withIdentifier: "toDetail", sender: product)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail" {
+            if let product = sender as? Products {
+                let destinationVC = segue.destination as! DetailPage
+                destinationVC.product = product
+            }
+        }
+    }
     
 }
 
