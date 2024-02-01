@@ -58,5 +58,21 @@ extension MainPage: UITableViewDelegate,UITableViewDataSource {
         return cell
     }
     
+    func tableView(_ tableView: UITableView, trailingSwipeActionsConfigurationForRowAt indexPath: IndexPath) -> UISwipeActionsConfiguration? {
+        let product = productsList[indexPath.row]
+        let deleteAction = UIContextualAction(style:.destructive, title: "Delete") {
+            contextualAction,view,bool in
+            print("\(product.name!) deleted.")
+        }
+        let editAction = UIContextualAction(style:.normal, title: "Edit") {
+            contextualAction,view,bool in
+            print("\(product.name!) edited.")
+        }
+        
+        return UISwipeActionsConfiguration(actions: [deleteAction,editAction])
+        
+    }
+    
+    
 }
 
