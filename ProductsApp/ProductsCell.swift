@@ -9,7 +9,13 @@ import UIKit
 
 class ProductsCell: UITableViewCell {
 
+    @IBOutlet weak var cellBackground: UIView!
+    @IBOutlet weak var imageViewProduct: UIImageView!
+    @IBOutlet weak var labelProductName: UILabel!
+    @IBOutlet weak var labelProductPrice: UILabel!
+    
     override func awakeFromNib() {
+        
         super.awakeFromNib()
         // Initialization code
     }
@@ -17,7 +23,10 @@ class ProductsCell: UITableViewCell {
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
 
-        // Configure the view for the selected state
+     
     }
-
+    
+    @IBAction func buttonAddToCart(_ sender: Any) {
+    }
+    
 }

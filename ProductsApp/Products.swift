@@ -6,3 +6,18 @@
 //
 
 import Foundation
+
+class Products {
+    var name: String?
+    var id: Int
+    var image: String?
+    var price: Int?
+    
+
+    init(name:String,id:Int,image:String,price:Int) {
+        self.id = id
+        self.name = name
+        self.image = image
+        self.price = price
+    }
+}
