@@ -39,7 +39,7 @@ class MainPage: UIViewController {
 
 }
 
-extension MainPage: UITableViewDelegate,UITableViewDataSource {
+extension MainPage: UITableViewDelegate,UITableViewDataSource,CellProtocol {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return productsList.count // ürünlerin size ı ne kadarsa o kadar satır göster
     }
@@ -55,6 +55,9 @@ extension MainPage: UITableViewDelegate,UITableViewDataSource {
         cell.backgroundColor = UIColor(white: 0.95, alpha: 1)
         cell.cellBackground?.layer.cornerRadius = 10
         cell.selectionStyle = .none
+        
+        cell.cellProtocol = self
+        cell.indexPath = indexPath
         
         return cell
     }
@@ -87,6 +90,12 @@ extension MainPage: UITableViewDelegate,UITableViewDataSource {
                 destinationVC.product = product
             }
         }
+    }
+    
+    func clickedAddToCartButton(indexPath: IndexPath) {
+        let product = productsList[indexPath.row]
+        print("\(product.name!) added to cart.")
+        
     }
     
 }

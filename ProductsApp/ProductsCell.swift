@@ -7,12 +7,20 @@
 
 import UIKit
 
+protocol CellProtocol {
+    func clickedAddToCartButton(indexPath:IndexPath)
+}
+
+
 class ProductsCell: UITableViewCell {
 
     @IBOutlet weak var cellBackground: UIView!
     @IBOutlet weak var imageViewProduct: UIImageView!
     @IBOutlet weak var labelProductName: UILabel!
     @IBOutlet weak var labelProductPrice: UILabel!
+    
+    var cellProtocol:CellProtocol?
+    var indexPath:IndexPath?
     
     override func awakeFromNib() {
         
@@ -27,6 +35,7 @@ class ProductsCell: UITableViewCell {
     }
     
     @IBAction func buttonAddToCart(_ sender: Any) {
+        cellProtocol?.clickedAddToCartButton(indexPath: indexPath!)
     }
     
 }
