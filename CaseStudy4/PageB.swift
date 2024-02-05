@@ -9,6 +9,7 @@ import UIKit
 
 class PageB: UIViewController {
 
+    @IBOutlet weak var segmentedControl: UISegmentedControl!
     @IBOutlet weak var labelPageB: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -18,5 +19,12 @@ class PageB: UIViewController {
     
     @IBAction func buttonGoToY(_ sender: Any) {
         performSegue(withIdentifier: "TransitionBToY", sender: nil)
+    }
+    
+    @IBAction func segmentedControlChange(_ sender: UISegmentedControl) {
+        
+        let choosenIndex = sender.selectedSegmentIndex
+        let choosenLine = sender.titleForSegment(at: choosenIndex)
+        print("Seçim : \(choosenLine!)")
     }
 }

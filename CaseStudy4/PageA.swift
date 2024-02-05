@@ -9,6 +9,7 @@ import UIKit
 
 class PageA: UIViewController {
 
+    @IBOutlet weak var imageView: UIImageView!
     @IBOutlet weak var labelPageA: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3I8-98-MKZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="22505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="3I8-98-MKZ">
     <device id="retina6_12" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22504"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -166,19 +167,28 @@
                                     <action selector="buttonGoToB:" destination="XKt-md-pez" eventType="touchUpInside" id="ZML-gn-Y9F"/>
                                 </connections>
                             </button>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="telefon" translatesAutoresizingMaskIntoConstraints="NO" id="FLg-mQ-m04">
+                                <rect key="frame" x="132.66666666666666" y="173" width="127.99999999999997" height="256"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="128" id="3NE-zZ-dbS"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="jlq-7n-bhg"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="FLg-mQ-m04" firstAttribute="centerX" secondItem="Vb7-Ba-HrD" secondAttribute="centerX" id="2eQ-aK-Hsb"/>
                             <constraint firstItem="Gke-N5-O1q" firstAttribute="centerY" secondItem="Vb7-Ba-HrD" secondAttribute="centerY" id="HCR-eb-8Rh"/>
                             <constraint firstItem="46Y-Qp-uaZ" firstAttribute="leading" secondItem="jlq-7n-bhg" secondAttribute="leading" constant="154.66999999999999" id="MHs-kE-cGT"/>
                             <constraint firstItem="Gke-N5-O1q" firstAttribute="centerX" secondItem="Vb7-Ba-HrD" secondAttribute="centerX" id="XYo-le-dCL"/>
                             <constraint firstItem="46Y-Qp-uaZ" firstAttribute="centerX" secondItem="Vb7-Ba-HrD" secondAttribute="centerX" id="aYh-ke-oQB"/>
+                            <constraint firstItem="FLg-mQ-m04" firstAttribute="top" secondItem="jlq-7n-bhg" secondAttribute="top" constant="70" id="qJw-PC-qh1"/>
                             <constraint firstItem="jlq-7n-bhg" firstAttribute="bottom" secondItem="46Y-Qp-uaZ" secondAttribute="bottom" constant="150" id="wkh-mh-13j"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="hZV-Ws-X9Z"/>
                     <connections>
+                        <outlet property="imageView" destination="FLg-mQ-m04" id="oBu-uG-fie"/>
                         <outlet property="labelPageA" destination="Gke-N5-O1q" id="SK0-ij-gf3"/>
                         <segue destination="fXP-LH-r0s" kind="show" identifier="TransitionAToB" id="sS0-ze-6o1"/>
                     </connections>
@@ -209,12 +219,26 @@
                                     <action selector="buttonGoToY:" destination="fXP-LH-r0s" eventType="touchUpInside" id="LrT-XO-qb0"/>
                                 </connections>
                             </button>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jpy-tX-2Mt">
+                                <rect key="frame" x="131" y="153" width="131" height="32"/>
+                                <segments>
+                                    <segment title="First"/>
+                                    <segment title="Second"/>
+                                </segments>
+                                <connections>
+                                    <action selector="segmentedControlChange:" destination="fXP-LH-r0s" eventType="valueChanged" id="WXL-Ls-nYj"/>
+                                </connections>
+                            </segmentedControl>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="N2W-E8-Lgq"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
+                            <constraint firstItem="jpy-tX-2Mt" firstAttribute="top" secondItem="N2W-E8-Lgq" secondAttribute="top" constant="50" id="Cbv-cA-Bg5"/>
                             <constraint firstItem="jBk-0Z-1Ea" firstAttribute="centerX" secondItem="234-Xa-aRg" secondAttribute="centerX" id="Cqb-ya-F37"/>
+                            <constraint firstItem="N2W-E8-Lgq" firstAttribute="trailing" secondItem="jpy-tX-2Mt" secondAttribute="trailing" constant="131" id="NWg-aI-O69"/>
+                            <constraint firstItem="jpy-tX-2Mt" firstAttribute="centerX" secondItem="234-Xa-aRg" secondAttribute="centerX" id="P35-eV-df4"/>
                             <constraint firstItem="jBk-0Z-1Ea" firstAttribute="centerY" secondItem="234-Xa-aRg" secondAttribute="centerY" id="P4e-NT-YJq"/>
+                            <constraint firstItem="jpy-tX-2Mt" firstAttribute="leading" secondItem="N2W-E8-Lgq" secondAttribute="leading" constant="131" id="i2N-TG-Wam"/>
                             <constraint firstItem="N2W-E8-Lgq" firstAttribute="bottom" secondItem="RpM-E5-wVv" secondAttribute="bottom" constant="150" id="jkg-HT-v7k"/>
                             <constraint firstItem="RpM-E5-wVv" firstAttribute="centerX" secondItem="234-Xa-aRg" secondAttribute="centerX" id="ke9-nr-JID"/>
                         </constraints>
@@ -222,6 +246,7 @@
                     <navigationItem key="navigationItem" id="PEg-SE-3kO"/>
                     <connections>
                         <outlet property="labelPageB" destination="jBk-0Z-1Ea" id="Kjb-ag-DWS"/>
+                        <outlet property="segmentedControl" destination="jpy-tX-2Mt" id="Qld-cG-WmI"/>
                         <segue destination="O4j-1y-Ne0" kind="show" identifier="TransitionBToY" id="T3d-Vg-74I"/>
                     </connections>
                 </viewController>
@@ -252,6 +277,7 @@
         <segue reference="T3d-Vg-74I"/>
     </inferredMetricsTieBreakers>
     <resources>
+        <image name="telefon" width="256" height="256"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
