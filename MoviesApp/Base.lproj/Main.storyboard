@@ -18,7 +18,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="U3x-Ir-09g">
-                                <rect key="frame" x="0.0" y="103" width="393" height="715"/>
+                                <rect key="frame" x="0.0" y="155" width="393" height="663"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="Scb-qa-CEc">
                                     <size key="itemSize" width="180" height="350"/>
@@ -86,6 +86,7 @@
                     <navigationItem key="navigationItem" title="Movies" id="eH9-E2-4du"/>
                     <connections>
                         <outlet property="moviesCollectionView" destination="U3x-Ir-09g" id="CR4-no-K1o"/>
+                        <segue destination="6bM-l9-fb8" kind="presentation" identifier="toDetail" id="6A6-m4-4SL"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -97,11 +98,42 @@
             <objects>
                 <viewController id="6bM-l9-fb8" customClass="DetailPage" customModule="MoviesApp" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="hsA-bw-2qs">
-                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="Sml-ck-ONV">
+                                <rect key="frame" x="96.666666666666686" y="147" width="200" height="548"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Django" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ljA-an-zOT">
+                                        <rect key="frame" x="18" y="0.0" width="163.66666666666666" height="60"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="50"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="django" translatesAutoresizingMaskIntoConstraints="NO" id="LA4-oe-zTf">
+                                        <rect key="frame" x="0.0" y="130" width="200" height="300"/>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="24$" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fDG-kh-Wfl">
+                                        <rect key="frame" x="62.666666666666664" y="500" width="74.666666666666686" height="48"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="40"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="6RB-8C-dWs"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Sml-ck-ONV" firstAttribute="centerX" secondItem="hsA-bw-2qs" secondAttribute="centerX" id="YfE-bJ-I0y"/>
+                            <constraint firstItem="Sml-ck-ONV" firstAttribute="centerY" secondItem="hsA-bw-2qs" secondAttribute="centerY" id="aqd-Sf-fHB"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="imageViewMovie" destination="LA4-oe-zTf" id="PMw-qt-50J"/>
+                        <outlet property="labelMovieName" destination="ljA-an-zOT" id="Cm7-NS-Dci"/>
+                        <outlet property="labelMoviePrice" destination="fDG-kh-Wfl" id="r3Y-yA-EYO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Lrv-WS-a51" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>

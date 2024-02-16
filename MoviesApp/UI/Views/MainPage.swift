@@ -44,7 +44,7 @@ class MainPage: UIViewController {
     }
 }
 
-extension MainPage: UICollectionViewDelegate,UICollectionViewDataSource {
+extension MainPage: UICollectionViewDelegate,UICollectionViewDataSource,CellProtocol {
     func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {
         moviesList.count
     }
@@ -60,7 +60,26 @@ extension MainPage: UICollectionViewDelegate,UICollectionViewDataSource {
         cell.layer.borderWidth = 0.3
         cell.layer.cornerRadius = 10.0
         
+        cell.cellProtocol = self
+        cell.indexPath = indexPath
+        
         
         return cell
+    }
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        let movie = moviesList[indexPath.row]
+        performSegue(withIdentifier: "toDetail", sender: movie)
+    }
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "toDetail" {
+            if let movie = sender as? Movies {
+                let locationVC = segue.destination as! DetailPage
+                locationVC.movie = movie
+            }
+        }
+    }
+    func addToCart(indexPath: IndexPath) {
+        let movie = moviesList[indexPath.row]
+        print("\(movie.name!) sepete eklendi.")
     }
 }
