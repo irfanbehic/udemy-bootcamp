@@ -30,6 +30,17 @@ class MainPage: UIViewController {
         moviesList.append(mov4)
         moviesList.append(mov5)
         moviesList.append(mov6)
+        
+        let design = UICollectionViewFlowLayout()
+        design.sectionInset = UIEdgeInsets(top: 10, left: 10, bottom: 10, right: 10)
+        design.minimumInteritemSpacing = 10
+        design.minimumLineSpacing = 10
+        
+//        10 x 10 x 10 total aboşluk 30 olacak
+        let screenWidth = UIScreen.main.bounds.width
+        let itemWidth = (screenWidth - 30) / 2 // 2 ye bölmemizin sebebi her satırda 2 adet film göstermek
+        design.itemSize = CGSize(width: itemWidth, height: itemWidth * 1.6)
+        moviesCollectionView.collectionViewLayout = design
     }
 }
 
